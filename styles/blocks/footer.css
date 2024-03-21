@@ -1,0 +1,20 @@
+/*(+)*/
+.footer {
+	background-color: #e9ded4;
+	flex-shrink: 0;
+	padding: 40px 0 72px;
+}
+
+.footer__text {
+	/*color: #313131;*/
+	font-size: 16px;
+	line-height: 19.2px;
+	max-width: 1222px;
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 375px) {
+	.footer {
+		padding: 40px 0 60px;
+	}
+}

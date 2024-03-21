@@ -1,0 +1,132 @@
+/*(+)*/
+.intro {
+	background-image: url(intro-background-desktop.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 700px;
+	padding-top: 124px;
+	position: relative;
+}
+
+.intro__logo {
+	/*display: inline-flex;*/
+	position: absolute;
+	top: 26px;
+}
+
+.intro__logo-image {
+	flex-shrink: 0;
+	height: 36px;
+	width: auto;
+}
+
+.intro__content {
+	max-width: 542px;
+}
+
+.intro__title {
+	/*color: #313131;*/
+	font-family: 'Merriweather', serif;
+	font-size: 60px;
+	line-height: 66px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+
+.intro__title span {
+	display: block;
+}
+
+.intro__title-center {
+	text-align: center;
+}
+
+.intro__title-right {
+	text-align: right;
+}
+
+.intro__description {
+	font-size: 18px;
+	line-height: 23.4px;
+	margin-bottom: 40px; /*значение в макете*/
+	margin-bottom: 39px;
+	text-align: center;
+}
+
+.intro__actions {
+	display: flex;
+	gap: 14px 16px;
+}
+
+.intro__button {
+	border: 2px solid #1f1f1f;
+	border-radius: 66px;
+	flex-shrink: 0;
+	line-height: 20.8px;
+	max-width: 263px;
+	min-height: 72px;
+	padding: 20px 49px;
+	width: 100%;
+}
+
+.intro__button--primary {
+	background-color: #1f1f1f;
+	color: #fff;
+}
+
+.intro__button--primary:hover {
+	background-color: #fbce51;
+	border-color: #fbce51;
+	color: #1f1f1f;
+}
+
+.intro__button--secondary {
+	background-color: transparent;
+	color: #1f1f1f;
+}
+
+.intro__button--secondary:hover {
+	background-color: #1f1f1f;
+	color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+	.intro {
+		background-image: url(intro-background-mobile.png);
+		min-height: 812px;
+		padding-top: 90px;
+	}
+	.intro__logo {
+		top: 18px;
+	}
+	.intro__logo-image {
+		height: 31px;
+		width: auto;
+	}
+	.intro__title {
+		font-size: 36px;
+		line-height: 39.6px;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+	.intro__description {
+		margin-bottom: 32px; /*значение в макете*/
+		margin-bottom: 31px;
+		text-align: left;
+	}
+	.intro__actions {
+		flex-direction: column;
+	}
+	.intro__button {
+		border: 0;
+		max-width: none;
+		min-height: 47px;
+		padding: 18px 20px;
+	}
+	.intro__button--secondary {
+		/*background-color: #ffffffe6;*/
+		background-color: rgb(255 255 255 / 0.9);
+		color: #1f1f1f;
+	}
+}

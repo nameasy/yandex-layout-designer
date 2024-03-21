@@ -1,0 +1,128 @@
+/*(+)*/
+.features {
+	margin-bottom: 200px;
+	padding-top: 80px;
+}
+
+.features__row {
+	position: relative;
+}
+
+.features__row--top {
+	align-items: center;
+	display: flex;
+	margin-bottom: 64px; /*значение в макете*/
+	margin-bottom: 65px;
+	min-height: 250px;
+	padding-right: 458px;
+}
+
+.features__row--bottom {
+	padding-left: 518px;
+}
+
+.features__text {
+	/*color: #313131;*/
+	display: inline;
+	font-family: 'Merriweather', serif;
+	font-size: 36px;
+	line-height: 48.6px;
+	text-transform: uppercase;
+}
+
+.features__row--bottom .features__text {
+	display: block;
+	margin-bottom: 60px;
+}
+
+.features__text strong {
+	color: #f54932;
+	font-weight: 700;
+}
+
+.features__figure {
+	position: absolute;
+}
+
+.features__figure--1 {
+	aspect-ratio: 394 / 250;
+	border-radius: 50%;
+	max-width: 394px;
+	overflow: hidden;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.features__figure--2 {
+	left: -27px;
+	max-width: 528px;
+	top: -27.81px;
+	width: calc(100% + 27px);
+}
+
+.features__image {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.features__image--texture {
+	inset: 0;
+	mix-blend-mode: color-burn;
+	position: absolute;
+	/*width: 100%;*/
+}
+
+.features__link {
+	color: #3057a2;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+@media screen and (max-width: 375px) {
+	.features {
+		margin-bottom: 120px; /*значение в макете*/
+		margin-bottom: 121px;
+		padding-top: 48px;
+	}
+	.features__row--top {
+		margin-bottom: 34px;
+		padding-right: 0;
+	}
+	.features__row--bottom {
+		padding-left: 0;
+	}
+	.features__figure {
+		position: static;
+	}
+	.features__figure--1 {
+		margin-bottom: 24.44px;
+		top: top;
+		transform: none;
+	}
+	.features__figure--2 {
+		margin-bottom: 24px;
+		margin-left: -20px;
+		margin-right: -20px;
+		width: calc(100% + 2 * 20px);
+	}
+	.features__text {
+		display: block;
+		font-size: 28px;
+		line-height: 37.8px;
+		line-height: 38px;
+	}
+	.features__row--bottom .features__text {
+		margin-bottom: 44px;
+	}
+	.features__text--first-line {
+		margin-bottom: 24px;
+	}
+	.features__link {
+		color: #3057a2;
+		font-size: 18px;
+		line-height: 21.6px;
+	}
+}

@@ -1,0 +1,18 @@
+/*(+)*/
+.main {
+	flex-grow: 1;
+}
+
+/*.main > :not(:last-child) {
+	margin-bottom: 200px;
+}
+
+.main > :last-child {
+	margin-bottom: 141px;
+}
+
+@media screen and (max-width: 375px) {
+	.main > :not(:last-child) {
+		margin-bottom: 120px;
+	}
+}*/

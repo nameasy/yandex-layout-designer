@@ -1,0 +1,132 @@
+/*(+)*/
+.stages {
+	margin-bottom: 200px;
+}
+
+.stages__title {
+	/*color: #313131;*/
+	font-family: 'Merriweather', serif;
+	font-size: 54px;
+	line-height: 64.8px;
+	margin-bottom: 54px; /*значение в макете*/
+	margin-bottom: 55px;
+	max-width: 806px;
+	text-transform: uppercase;
+}
+
+.stages__title span {
+	margin-right: 20px;
+}
+
+.stages__title-link {
+	color: #3057a2;
+	display: inline-block;
+	font-family: 'Golos Text', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	max-width: 280px;
+	text-transform: none;
+}
+
+.stages__carousel {
+	position: relative;
+}
+
+.stages__list {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stages__item--1x2 {
+	grid-row: span 2;
+}
+
+.stages__item--2x1 {
+	display: grid;
+	grid-column: span 2;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stages__carousel-nav {
+	display: none;
+}
+
+.stages__figure {
+	animation: fallRise 5s linear infinite;
+	bottom: 47px;
+	height: 146.22px;
+	height: auto;
+	max-width: 374.8px;
+	position: absolute;
+	right: -50px;
+	transform: rotate(var(--rotation-degree));
+	will-change: transform;
+	--rotation-degree: -15.31deg;
+}
+
+@media screen and (max-width: 375px) {
+	.stages {
+		margin-bottom: 120px; /*значение в макете*/
+		margin-bottom: 121px;
+	}
+	.stages__title {
+		font-size: 36px;
+		line-height: 40px;
+		margin-bottom: 148px; /*значение в макете*/
+		margin-bottom: 144px;
+	}
+	.stages__title span {
+		display: block;
+		margin-bottom: 12px;
+	}
+	.stages__title-link {
+		font-size: 18px;
+		line-height: 21.6px;
+		margin-left: 0;
+		max-width: none;
+	}
+	.stages__carousel {
+		display: flex;
+		flex-direction: column;
+	}
+	.carousel__inner {
+		align-items: stretch;
+		display: flex;
+		flex-grow: 1;
+		height: 100%;
+	}
+	.stages__carousel-inner {
+		margin-bottom: 28px; /*значение в макете*/
+		margin-bottom: 29px;
+	}
+	.stages__list {
+		display: flex;
+		flex-grow: 1;
+		grid-gap: normal;
+		will-change: transform;
+	}
+	.stages__item {
+		background-image: url(stage-background-mobile.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+		flex-shrink: 0;
+		margin-bottom: 0;
+		margin-right: 20px;
+		opacity: 0;
+		padding: 62px 20px 34px;
+		width: 394px;
+	}
+	.stages__carousel-nav {
+		display: flex;
+	}
+	.stages__figure {
+		max-width: 318.76px;
+		right: -51px;
+		top: -101px;
+		--rotation-degree: -18.73deg;
+	}
+}

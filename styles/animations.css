@@ -1,0 +1,26 @@
+@keyframes fallRise {
+	0% {
+		transform: translateY(0) rotate(var(--rotation-degree));
+	}
+	25% {
+		transform: translateY(-20px) rotate(var(--rotation-degree));
+	}
+	50% {
+		transform: translateY(0) rotate(var(--rotation-degree));
+	}
+	75% {
+		transform: translateY(20px) rotate(var(--rotation-degree));
+	}
+	100% {
+		transform: translateY(0) rotate(var(--rotation-degree));
+	}
+}
+
+@keyframes ticker {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% - 12px));
+	}
+}

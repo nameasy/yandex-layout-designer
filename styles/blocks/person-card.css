@@ -1,0 +1,52 @@
+/*(+)*/
+.person-card__figure {
+	aspect-ratio: 1;
+	border-radius: 50%;
+	margin-bottom: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 320px;
+}
+
+.person-card__image {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.person-card__name {
+	/*color: #313131;*/
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 28.8px;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.person-card__text {
+	/*color: #313131;*/
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 20px;
+	opacity: 0.6;
+	text-align: center;
+}
+
+.person-card__actions {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+	.person-card__figure {
+		margin-bottom: 29px;
+		max-width: 244px;
+	}
+	.person-card__name {
+		margin-bottom: 7px;
+	}
+	/*.person-card__text {
+		margin-bottom: 21px;
+	}*/
+}

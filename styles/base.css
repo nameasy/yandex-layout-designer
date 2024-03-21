@@ -1,0 +1,24 @@
+:focus {
+	outline: none;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #fff;
+	color: #313131;
+	font-family: 'Golos Text', sans-serif;
+	font-size: 100%;
+	/*line-height: 1.2;*/
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}

@@ -1,0 +1,29 @@
+/*(+)*/
+.button {
+	align-items: center;
+	appearance: none;
+	background-color: transparent;
+	border: 1px solid #3057a2;
+	border-radius: 50rem;
+	color: #3057a2;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	justify-content: center;
+	line-height: 19.2px;
+	max-height: 35px;
+	min-width: 113px;
+	overflow: hidden;
+	padding: 12px;
+	text-align: center;
+	transition-duration: 0.25s;
+	transition-property: background-color, border-color, color;
+	user-select: none;
+}
+
+.button:hover {
+	background-color: #3057a2;
+	color: #fff;
+}

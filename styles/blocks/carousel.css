@@ -1,0 +1,129 @@
+.carousel__list--animating {
+	transition-duration: 0.5s;
+	transition-property: transform;
+}
+
+.carousel--is-loaded .carousel__item {
+	opacity: 1;
+}
+
+.carousel:not(.carousel--is-dragging) .carousel__list:not(.carousel__list--animating) .carousel__item[tabindex='-1'] > * {
+	visibility: hidden;
+}
+
+.carousel[data-drag='on'] .carousel__item {
+	user-select: none;
+}
+
+.carousel[data-drag='on'] .carousel__item img {
+	pointer-events: none;
+}
+
+.carousel__nav-list {
+	align-items: center;
+	display: flex;
+	gap: 14px;
+	margin: 0 auto;
+}
+
+.carousel__nav-item {
+	display: flex;
+}
+
+.carousel__nav-text {
+	align-items: center;
+	color: rgb(49 49 49 / 0.6);
+	display: flex;
+	flex-shrink: 0;
+	font-size: 16px;
+	gap: 1px;
+	justify-content: space-around;
+	line-height: 19.2px;
+	max-width: 35px;
+	min-width: 35px;
+}
+
+.carousel__counter {
+	color: #313131;
+}
+
+.carousel__control {
+	aspect-ratio: 1;
+	background-color: #313131;
+	border: 0;
+	height: 44px;
+	max-height: none;
+	min-width: auto;
+	padding: 0;
+	position: relative;
+	width: 44px;
+}
+
+.carousel__control:hover {
+	background-color: #fbce51;
+}
+
+.carousel__control[disabled] {
+	background-color: #d6d6d6;
+	pointer-events: none;
+}
+
+.carousel__control-icon {
+	flex-shrink: 0;
+	height: 22px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+}
+
+.carousel__nav-item:first-child .carousel__control-icon {
+	margin-left: -2px;
+}
+
+.carousel__nav-item:last-child .carousel__control-icon {
+	margin-left: 2px;
+}
+
+.carousel__pagination {
+	display: flex;
+	gap: 6px;
+	list-style: none;
+}
+
+.carousel__pagination-button {
+	aspect-ratio: 1;
+	background-color: #d9d9d9;
+	border: 0;
+	height: 10px;
+	max-height: none;
+	min-width: auto;
+	padding: 0;
+	position: relative;
+	width: 10px;
+}
+
+.carousel__pagination-item--is-selected .carousel__pagination-button {
+	background-color: #313131;
+}
+
+@media screen and (max-width: 375px) {
+	.carousel__nav-list {
+		gap: 16px;
+	}
+	.carousel__nav-text {
+		max-width: 29px;
+		min-width: 29px;
+	}
+	.carousel__control {
+		height: 36px;
+		width: 36px;
+	}
+	.carousel__control-icon {
+		height: 18px;
+	}
+	.carousel__pagination {
+		margin-top: -2px;
+	}
+}
